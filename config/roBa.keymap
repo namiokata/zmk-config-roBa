@@ -88,8 +88,6 @@
             // 追加: スクロールのタップ時間を設定 (20ms)
 
             tap-ms = <20>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
