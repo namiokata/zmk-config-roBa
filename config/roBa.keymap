@@ -110,8 +110,6 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C           &kp V            &kp B        &kp TAB              &kp RIGHT_PARENTHESIS  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &lt 4 QUESTION  &lt 6 LC(SPACE)  &lt 2 SPACE  &lt 3 RC(SPACE)      &kp BACKSPACE          &lt 1 ENTER                             &kp DEL
             >;
-
-            sensor-bindings = <&new_behavior>;
         };
 
         SYMBOLS {
