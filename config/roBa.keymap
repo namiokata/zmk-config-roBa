@@ -25,6 +25,16 @@
     // };
 };
 
+behaviors {
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            // 追加: スクロールのタップ時間を設定 (20ms)
+
+            tap-ms = <20>;
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -76,18 +86,6 @@
                 <&sl 4>;
 
             label = "MKP_EXIT_AML";
-        };
-    };
-
-    behaviors {
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            // 追加: スクロールのタップ時間を設定 (20ms)
-
-            tap-ms = <20>;
         };
     };
 
